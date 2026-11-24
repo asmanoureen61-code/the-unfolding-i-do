@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project architecture
+
+- Keep the invitation as a self-contained home-screen experience, using CSS 3D state transitions and shared design tokens instead of adding an animation dependency; this keeps the original artwork sharp and mobile playback lightweight.

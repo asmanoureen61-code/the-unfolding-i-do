@@ -74,73 +74,533 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.129 0.042 264.695);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
-  --secondary: oklch(0.968 0.007 247.896);
-  --secondary-foreground: oklch(0.208 0.042 265.755);
-  --muted: oklch(0.968 0.007 247.896);
-  --muted-foreground: oklch(0.554 0.046 257.417);
-  --accent: oklch(0.968 0.007 247.896);
-  --accent-foreground: oklch(0.208 0.042 265.755);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.929 0.013 255.508);
-  --input: oklch(0.929 0.013 255.508);
-  --ring: oklch(0.704 0.04 256.788);
+  --background: oklch(0.09 0.008 55);
+  --foreground: oklch(0.9 0.035 82);
+  --card: oklch(0.13 0.01 55);
+  --card-foreground: oklch(0.9 0.035 82);
+  --popover: oklch(0.13 0.01 55);
+  --popover-foreground: oklch(0.9 0.035 82);
+  --primary: oklch(0.74 0.13 78);
+  --primary-foreground: oklch(0.12 0.015 55);
+  --secondary: oklch(0.19 0.015 55);
+  --secondary-foreground: oklch(0.86 0.07 80);
+  --muted: oklch(0.17 0.012 55);
+  --muted-foreground: oklch(0.68 0.035 75);
+  --accent: oklch(0.22 0.025 64);
+  --accent-foreground: oklch(0.9 0.07 80);
+  --destructive: oklch(0.58 0.18 25);
+  --destructive-foreground: oklch(0.96 0.01 75);
+  --border: oklch(0.36 0.04 72 / 50%);
+  --input: oklch(0.36 0.04 72 / 50%);
+  --ring: oklch(0.74 0.13 78);
+  --antique-gold: oklch(0.79 0.13 79);
+  --gold-shadow: oklch(0.48 0.1 70 / 32%);
+  --ambient-glow: oklch(0.43 0.08 68 / 15%);
+  --ambient-glow-low: oklch(0.3 0.055 25 / 8%);
+  --card-shadow: oklch(0.015 0.003 55 / 86%);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.984 0.003 247.858);
-  --sidebar-foreground: oklch(0.129 0.042 264.695);
-  --sidebar-primary: oklch(0.208 0.042 265.755);
-  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-accent: oklch(0.968 0.007 247.896);
-  --sidebar-accent-foreground: oklch(0.208 0.042 265.755);
-  --sidebar-border: oklch(0.929 0.013 255.508);
-  --sidebar-ring: oklch(0.704 0.04 256.788);
+  --sidebar: oklch(0.13 0.01 55);
+  --sidebar-foreground: oklch(0.9 0.035 82);
+  --sidebar-primary: oklch(0.74 0.13 78);
+  --sidebar-primary-foreground: oklch(0.12 0.015 55);
+  --sidebar-accent: oklch(0.22 0.025 64);
+  --sidebar-accent-foreground: oklch(0.9 0.07 80);
+  --sidebar-border: oklch(0.36 0.04 72 / 50%);
+  --sidebar-ring: oklch(0.74 0.13 78);
 }
 
 .dark {
-  --background: oklch(0.129 0.042 264.695);
-  --foreground: oklch(0.984 0.003 247.858);
-  --card: oklch(0.208 0.042 265.755);
-  --card-foreground: oklch(0.984 0.003 247.858);
-  --popover: oklch(0.208 0.042 265.755);
-  --popover-foreground: oklch(0.984 0.003 247.858);
-  --primary: oklch(0.929 0.013 255.508);
-  --primary-foreground: oklch(0.208 0.042 265.755);
-  --secondary: oklch(0.279 0.041 260.031);
-  --secondary-foreground: oklch(0.984 0.003 247.858);
-  --muted: oklch(0.279 0.041 260.031);
-  --muted-foreground: oklch(0.704 0.04 256.788);
-  --accent: oklch(0.279 0.041 260.031);
-  --accent-foreground: oklch(0.984 0.003 247.858);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.551 0.027 264.364);
+  --background: oklch(0.09 0.008 55);
+  --foreground: oklch(0.9 0.035 82);
+  --card: oklch(0.13 0.01 55);
+  --card-foreground: oklch(0.9 0.035 82);
+  --popover: oklch(0.13 0.01 55);
+  --popover-foreground: oklch(0.9 0.035 82);
+  --primary: oklch(0.74 0.13 78);
+  --primary-foreground: oklch(0.12 0.015 55);
+  --secondary: oklch(0.19 0.015 55);
+  --secondary-foreground: oklch(0.86 0.07 80);
+  --muted: oklch(0.17 0.012 55);
+  --muted-foreground: oklch(0.68 0.035 75);
+  --accent: oklch(0.22 0.025 64);
+  --accent-foreground: oklch(0.9 0.07 80);
+  --destructive: oklch(0.58 0.18 25);
+  --destructive-foreground: oklch(0.96 0.01 75);
+  --border: oklch(0.36 0.04 72 / 50%);
+  --input: oklch(0.36 0.04 72 / 50%);
+  --ring: oklch(0.74 0.13 78);
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
   --chart-4: oklch(0.627 0.265 303.9);
   --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.208 0.042 265.755);
-  --sidebar-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-accent: oklch(0.279 0.041 260.031);
-  --sidebar-accent-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.551 0.027 264.364);
+  --sidebar: oklch(0.13 0.01 55);
+  --sidebar-foreground: oklch(0.9 0.035 82);
+  --sidebar-primary: oklch(0.74 0.13 78);
+  --sidebar-primary-foreground: oklch(0.12 0.015 55);
+  --sidebar-accent: oklch(0.22 0.025 64);
+  --sidebar-accent-foreground: oklch(0.9 0.07 80);
+  --sidebar-border: oklch(0.36 0.04 72 / 50%);
+  --sidebar-ring: oklch(0.74 0.13 78);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html,
+  body {
+    min-width: 320px;
+    min-height: 100%;
+    margin: 0;
+  }
+
+  body {
+    background: var(--color-background);
+    color: var(--color-foreground);
+  }
+}
+
+.invitation-experience {
+  display: flex;
+  min-height: 100vh;
+  min-height: 100dvh;
+  align-items: center;
+  justify-content: center;
+  padding: max(18px, env(safe-area-inset-top)) max(14px, env(safe-area-inset-right))
+    max(18px, env(safe-area-inset-bottom)) max(14px, env(safe-area-inset-left));
+  background:
+    radial-gradient(ellipse at 50% 46%, var(--ambient-glow), transparent 62%),
+    radial-gradient(ellipse at 50% 100%, var(--ambient-glow-low), transparent 45%),
+    var(--color-background);
+  isolation: isolate;
+}
+
+.invitation-composition {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.invitation-trigger {
+  position: relative;
+  display: block;
+  width: min(100%, 690px, calc((100dvh - 180px) * 0.80028));
+  height: auto;
+  max-width: 100%;
+  min-height: 0;
+  aspect-ratio: 1122 / 1402;
+  flex: 0 0 auto;
+  overflow: visible;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  perspective: 1550px;
+  transform-style: preserve-3d;
+  transition:
+    opacity 800ms cubic-bezier(0.65, 0.05, 0.22, 1),
+    transform 800ms cubic-bezier(0.65, 0.05, 0.22, 1);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.invitation-trigger[data-ready="false"] {
+  opacity: 0;
+  transform: scale(0.96);
+}
+
+.invitation-trigger[data-ready="true"] {
+  animation: invitation-arrive 850ms cubic-bezier(0.65, 0.05, 0.22, 1) both;
+}
+
+.invitation-trigger:focus-visible {
+  outline: 1px solid var(--antique-gold);
+  outline-offset: 8px;
+}
+
+.invitation-artwork,
+.opened-artwork,
+.closed-artwork,
+.gatefold-panels,
+.release-ribbon,
+.release-seal {
+  position: absolute;
+  inset: 0;
+}
+
+.invitation-artwork {
+  overflow: visible;
+  transform-style: preserve-3d;
+  filter: drop-shadow(0 24px 32px var(--card-shadow)) drop-shadow(0 4px 18px var(--gold-shadow));
+}
+
+.opened-artwork,
+.closed-artwork,
+.panel-source {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  user-select: none;
+  pointer-events: none;
+}
+
+.opened-artwork {
+  z-index: 1;
+  opacity: 0;
+  transform: scale(0.97);
+  transition:
+    opacity 1250ms cubic-bezier(0.65, 0.05, 0.22, 1),
+    transform 1800ms cubic-bezier(0.65, 0.05, 0.22, 1);
+}
+
+.closed-artwork {
+  z-index: 2;
+  opacity: 1;
+  transition: opacity 850ms cubic-bezier(0.65, 0.05, 0.22, 1);
+}
+
+.invitation-trigger[data-state="opening"] .closed-artwork {
+  opacity: 0.76;
+}
+
+.invitation-trigger[data-state="revealing"] .closed-artwork,
+.invitation-trigger[data-state="opened"] .closed-artwork {
+  opacity: 0;
+}
+
+.invitation-trigger[data-state="revealing"] .opened-artwork,
+.invitation-trigger[data-state="opened"] .opened-artwork {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.seal-hotspot {
+  position: absolute;
+  z-index: 5;
+  top: 46%;
+  left: 49.7%;
+  width: 37%;
+  height: 31%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.seal-hotspot::before,
+.seal-hotspot::after {
+  position: absolute;
+  inset: 12%;
+  border-radius: 50%;
+  content: "";
+  opacity: 0;
+  pointer-events: none;
+}
+
+.seal-hotspot::before {
+  background: radial-gradient(ellipse, oklch(0.86 0.13 78 / 20%), transparent 70%);
+  transition: opacity 280ms ease;
+}
+
+.seal-hotspot::after {
+  background: linear-gradient(110deg, transparent 35%, oklch(0.94 0.09 83 / 45%) 49%, transparent 62%);
+  transform: translateX(-120%);
+}
+
+.invitation-trigger[data-state="unlocking"] .seal-hotspot::before {
+  opacity: 1;
+  animation: seal-unlock 350ms ease-out both;
+}
+
+.invitation-trigger[data-state="unlocking"] .seal-hotspot::after {
+  opacity: 1;
+  animation: seal-glint 420ms cubic-bezier(0.65, 0.05, 0.22, 1) both;
+}
+
+.gatefold-panels {
+  z-index: 3;
+  perspective: 1550px;
+  transform-style: preserve-3d;
+  pointer-events: none;
+}
+
+.cover-panel {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  overflow: visible;
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  will-change: transform, opacity;
+  transition:
+    transform 1550ms cubic-bezier(0.65, 0.05, 0.22, 1),
+    opacity 440ms ease;
+}
+
+.cover-panel--left {
+  left: 0;
+  clip-path: polygon(12% 7%, 100% 7%, 100% 93%, 12% 93%);
+  transform-origin: 100% 50%;
+}
+
+.cover-panel--right {
+  right: 0;
+  clip-path: polygon(0.5% 7%, 89% 7%, 89% 93%, 0.5% 93%);
+  transform-origin: 0 50%;
+}
+
+.panel-source {
+  width: 200%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.panel-source--right {
+  transform: translateX(-50%);
+}
+
+.invitation-trigger[data-state="opening"] .cover-panel--left,
+.invitation-trigger[data-state="revealing"] .cover-panel--left,
+.invitation-trigger[data-state="opened"] .cover-panel--left {
+  transform: rotateY(-105deg);
+}
+
+.invitation-trigger[data-state="opening"] .cover-panel--right,
+.invitation-trigger[data-state="revealing"] .cover-panel--right,
+.invitation-trigger[data-state="opened"] .cover-panel--right {
+  transform: rotateY(105deg);
+}
+
+.invitation-trigger[data-state="opening"] .cover-panel {
+  transition-delay: 200ms, 0ms;
+}
+
+.invitation-trigger[data-state="revealing"] .cover-panel,
+.invitation-trigger[data-state="opened"] .cover-panel {
+  opacity: 0;
+  transition-delay: 650ms;
+}
+
+.release-ribbon,
+.release-seal {
+  z-index: 4;
+  background-image: url("/__l5e/assets-v1/3b06bf4c-6ea8-48a0-ae72-8daabf241783/invitation-front.png");
+  background-size: 100% 100%;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 260ms ease;
+}
+
+.release-ribbon {
+  clip-path: inset(43% 4% 47% 4%);
+}
+
+.release-ribbon::after {
+  position: absolute;
+  inset: 43% 4% 47%;
+  background: linear-gradient(105deg, transparent 35%, oklch(0.94 0.1 82 / 70%) 50%, transparent 65%);
+  content: "";
+  opacity: 0;
+  transform: translateX(-115%);
+}
+
+.release-seal {
+  clip-path: inset(28% 26% 34% 26%);
+}
+
+.invitation-trigger[data-state="unlocking"] .release-ribbon::after {
+  opacity: 1;
+  animation: ribbon-release 560ms cubic-bezier(0.65, 0.05, 0.22, 1) both;
+}
+
+.invitation-trigger[data-state="revealing"] .release-ribbon,
+.invitation-trigger[data-state="revealing"] .release-seal,
+.invitation-trigger[data-state="opening"] .release-ribbon,
+.invitation-trigger[data-state="opening"] .release-seal,
+.invitation-trigger[data-state="opened"] .release-ribbon,
+.invitation-trigger[data-state="opened"] .release-seal {
+  opacity: 0;
+}
+
+.invitation-trigger[data-state="opening"] .release-ribbon,
+.invitation-trigger[data-state="opening"] .release-seal {
+  transition-duration: 220ms;
+}
+
+.opening-cue {
+  margin: 0;
+  color: var(--antique-gold);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.72rem;
+  font-weight: 400;
+  line-height: 1.4;
+  opacity: 0.78;
+  animation: cue-arrive 700ms 200ms ease both;
+  transition: opacity 220ms ease;
+}
+
+.invitation-trigger[data-state="unlocking"] ~ .opening-cue,
+.invitation-trigger[data-state="opening"] ~ .opening-cue,
+.invitation-trigger[data-state="revealing"] ~ .opening-cue {
+  opacity: 0;
+}
+
+.invitation-controls {
+  display: flex;
+  min-height: 34px;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(8px, 3vw, 28px);
+  flex-wrap: wrap;
+}
+
+.invitation-control {
+  min-height: 34px;
+  padding-inline: 8px;
+  color: var(--antique-gold);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  transition: color 180ms ease, background-color 180ms ease;
+}
+
+.invitation-control:hover {
+  color: var(--color-foreground);
+}
+
+.invitation-control svg {
+  width: 15px;
+  height: 15px;
+  stroke-width: 1.5;
+}
+
+.copy-fallback {
+  position: fixed;
+  top: 0;
+  left: -9999px;
+  opacity: 0;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .invitation-trigger[data-state="closed"]:hover .seal-hotspot::before {
+    opacity: 1;
+  }
+
+  .invitation-trigger[data-state="closed"]:hover .seal-hotspot::after {
+    opacity: 1;
+    animation: seal-glint 720ms cubic-bezier(0.65, 0.05, 0.22, 1) both;
+  }
+}
+
+@media (hover: none) {
+  .invitation-trigger[data-state="closed"] .seal-hotspot::before {
+    opacity: 0.3;
+    animation: seal-breathe 3.2s ease-in-out infinite;
+  }
+}
+
+@media (max-width: 420px) {
+  .invitation-trigger {
+    width: min(100%, 690px, calc((100dvh - 166px) * 0.80028));
+  }
+
+  .invitation-composition {
+    gap: 10px;
+  }
+
+  .invitation-controls {
+    gap: 4px;
+  }
+
+  .invitation-control {
+    font-size: 0.7rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+    transition-delay: 0ms !important;
+  }
+}
+
+@keyframes invitation-arrive {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes cue-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 0.78;
+    transform: translateY(0);
+  }
+}
+
+@keyframes seal-unlock {
+  0%,
+  100% {
+    opacity: 0.05;
+    transform: scale(0.97);
+  }
+  45% {
+    opacity: 0.95;
+    transform: scale(1.04);
+  }
+}
+
+@keyframes seal-glint {
+  from {
+    transform: translateX(-120%);
+  }
+  to {
+    transform: translateX(120%);
+  }
+}
+
+@keyframes ribbon-release {
+  from {
+    transform: translateX(-115%);
+  }
+  to {
+    transform: translateX(115%);
+  }
+}
+
+@keyframes seal-breathe {
+  0%,
+  100% {
+    opacity: 0.12;
+  }
+  50% {
+    opacity: 0.42;
+  }
 }
 
 @layer base {

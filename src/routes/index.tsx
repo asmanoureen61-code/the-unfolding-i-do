@@ -1,23 +1,28 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { InvitationExperience } from "@/components/InvitationExperience";
 
-// The home route ships no og:image, so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Muhammad Ali & Misbah Noureen | Wedding Invitation" },
+      {
+        name: "description",
+        content:
+          "Open the invitation for Muhammad Ali and Misbah Noureen's Baraat Ceremony on 25 December 2026 in Rawalpindi, Pakistan.",
+      },
+      { property: "og:title", content: "Muhammad Ali & Misbah Noureen | Wedding Invitation" },
+      {
+        property: "og:description",
+        content:
+          "An invitation to the Baraat Ceremony of Muhammad Ali and Misbah Noureen, 25 December 2026, Rawalpindi, Pakistan.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
+  return <InvitationExperience />;
 }
